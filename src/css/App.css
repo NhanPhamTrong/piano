@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:active {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+input, button {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  background-color: #82dde4;
+  position: relative;
+}
+
+body #root {
+  height: 100vh;
+  width: 100%;
+}
+
+body #root .container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #root .container button {
+  height: 10rem;
+  width: calc(100% / 52);
+  background-color: white;
+  -webkit-box-shadow: inset 0 0 2px black;
+          box-shadow: inset 0 0 2px black;
+}
+
+body #root .container button:nth-child(1) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * 0.5);
+}
+
+body #root .container button:nth-child(2) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(7) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(12) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(17) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(22) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(27) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(32) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(3) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(8) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(13) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(18) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(23) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(28) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(33) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(4) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(9) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(14) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(19) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(24) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(29) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(34) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(5) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(10) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(15) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(20) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(25) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(30) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(35) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(6) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(11) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(16) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(21) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(26) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(31) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button:nth-child(36) {
+  height: 6.5rem;
+  width: calc(80% / 52);
+  background-color: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+  left: calc((100% / 52) * (2.5 + ($j) + 7 * ($i)));
+}
+
+body #root .container button.active, body #root .container button:hover {
+  background-color: #646464;
+}
+
+body #root .container .activate {
+  height: 4rem;
+  width: 4rem;
+  background-color: red;
+}
+/*# sourceMappingURL=App.css.map */
